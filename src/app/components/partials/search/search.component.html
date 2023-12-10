@@ -1,0 +1,7 @@
+<div>
+<!-- #s is template reference : it will hold all the data of specific tag-->
+  <input #s type="text" placeholder="Search Your Groceries!"
+   (keyup.enter)="search(s.value)"
+   [value]="searchTerm" />
+  <button (click)="search(s.value)">Search</button>
+</div>
